@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./lib"
+  },
+  "files": [
+    "index.ts",
+    "../../../../../Library/Caches/JetBrains/WebStorm2021.3/javascript/typings/node/10.17.60/node_modules/@types/node/globals.d.ts"
+  ]
+}
