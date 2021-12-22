@@ -1,0 +1,3 @@
+# @sparks/crossStorage
+
+- v0.0.1 init project
