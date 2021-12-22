@@ -3,7 +3,7 @@ const shell = require('shelljs')
 const getLogger = require('webpack-log');
 const log = getLogger({name: 'sparks-build'});
 console.log('\x1B[36m%s\x1B[0m', '开始执行打包命令....')
-const rootPath = process.cwd().split('packages')[0] + 'packages'
+const rootPath = process.cwd().split('packages')[0] + '/packages'
 
 function handlePathList(): string[] {
     let pathList = []
@@ -16,7 +16,6 @@ function handlePathList(): string[] {
     }
     return pathList
 }
-
 
 function handlePromise(path: string): Promise<Record<string, any>> {
     return new Promise((resolve, reject) => {
@@ -36,14 +35,14 @@ function handlePromise(path: string): Promise<Record<string, any>> {
     })
 }
 
-function mergePromise(ajaxArray) {
+function mergePromise(pathArray: string[]) {
     let arr = [];
 
     async function run() {
-        for (let p of ajaxArray) {
-            if (!(/\./.test(p))) {
+        for (let path of pathArray) {
+            if (!(/\./.test(path))) {
                 try {
-                    arr.push(await handlePromise(p) as never);
+                    arr.push(await handlePromise(path) as never);
                 } catch (e) {
                     arr.push(e as never);
                 }
@@ -56,7 +55,6 @@ function mergePromise(ajaxArray) {
 
     return run();
 }
-
 
 function init() {
     return (async () => {
