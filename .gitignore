@@ -5,3 +5,7 @@
 .idea/
 package-lock.json
 /packages/fabuild/node_modules/
+/packages/**/node_modules/
+/packages/**/lib/
+/packages/**/dist/
+/packages/**/es/
