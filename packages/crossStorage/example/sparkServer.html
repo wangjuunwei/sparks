@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Server</title>
+    <script src="../dist/index.umd.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <li id="loading">正在等待通信中</li>
+</div>
+<script>
+    const server = new window.sparkCrossStorage.SparkCrossServer({timeout: 10000});
+    server.onListen().then(res => {
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode(res.message);
+        node.appendChild(textnode);
+        var isDel = document.getElementById('loading')
+        isDel.parentNode.removeChild(isDel)
+        document.getElementById('app').appendChild(node)
+    }).catch(err => {
+        console.log("err===",err);
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode('获取信息失败，请查看console');
+        node.appendChild(textnode);
+        var isDel = document.getElementById('loading')
+        isDel.parentNode.removeChild(isDel)
+        document.getElementById('app').appendChild(node)
+    })
+</script>
+</body>
+</html>

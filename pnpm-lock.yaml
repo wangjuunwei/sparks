@@ -22,12 +22,17 @@ importers:
       '@babel/plugin-transform-runtime': ^7.16.5
       '@babel/runtime': ^7.16.5
       '@babel/runtime-corejs3': ^7.16.5
+      http-server: ^14.0.0
+      query-string: ^7.0.1
       web-storage-cache: ^1.1.1
     dependencies:
       '@babel/plugin-transform-runtime': registry.npmmirror.com/@babel/plugin-transform-runtime/7.16.5
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.16.5
       '@babel/runtime-corejs3': registry.npmmirror.com/@babel/runtime-corejs3/7.16.5
+      query-string: registry.nlark.com/query-string/7.0.1
       web-storage-cache: registry.npmmirror.com/web-storage-cache/1.1.1
+    devDependencies:
+      http-server: registry.npmmirror.com/http-server/14.0.0
 
   packages/spark-build:
     specifiers:
@@ -654,6 +659,15 @@ packages:
     name: balanced-match
     version: 1.0.2
 
+  registry.nlark.com/basic-auth/2.0.1:
+    resolution: {integrity: sha1-uZgnm/R844NEtPPPkW1Gebv1Hjo=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/basic-auth/download/basic-auth-2.0.1.tgz}
+    name: basic-auth
+    version: 2.0.1
+    engines: {node: '>= 0.8'}
+    dependencies:
+      safe-buffer: registry.nlark.com/safe-buffer/5.1.2
+    dev: true
+
   registry.nlark.com/bcrypt-pbkdf/1.0.2:
     resolution: {integrity: sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/bcrypt-pbkdf/download/bcrypt-pbkdf-1.0.2.tgz}
     name: bcrypt-pbkdf
@@ -865,6 +879,13 @@ packages:
     hasBin: true
     dev: true
 
+  registry.nlark.com/colors/1.4.0:
+    resolution: {integrity: sha1-xQSRR51MG9rtLJztMs98fcI2D3g=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/colors/download/colors-1.4.0.tgz}
+    name: colors
+    version: 1.4.0
+    engines: {node: '>=0.1.90'}
+    dev: true
+
   registry.nlark.com/combined-stream/1.0.8:
     resolution: {integrity: sha1-w9RaizT9cwYxoRCoolIGgrMdWn8=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/combined-stream/download/combined-stream-1.0.8.tgz}
     name: combined-stream
@@ -933,6 +954,13 @@ packages:
     resolution: {integrity: sha1-pgQtNjTCsn6TKPg3uWX6yDgI24U=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/core-util-is/download/core-util-is-1.0.3.tgz}
     name: core-util-is
     version: 1.0.3
+    dev: true
+
+  registry.nlark.com/corser/2.0.1:
+    resolution: {integrity: sha1-jtolLsqrWEDc2XXOuQ2TcMgZ/4c=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/corser/download/corser-2.0.1.tgz}
+    name: corser
+    version: 2.0.1
+    engines: {node: '>= 0.4.0'}
     dev: true
 
   registry.nlark.com/cosmiconfig/5.2.1:
@@ -1068,6 +1096,13 @@ packages:
       assert-plus: registry.nlark.com/assert-plus/1.0.0
     dev: true
     optional: true
+
+  registry.nlark.com/decode-uri-component/0.2.0:
+    resolution: {integrity: sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/decode-uri-component/download/decode-uri-component-0.2.0.tgz}
+    name: decode-uri-component
+    version: 0.2.0
+    engines: {node: '>=0.10'}
+    dev: false
 
   registry.nlark.com/dedent/0.7.0:
     resolution: {integrity: sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/dedent/download/dedent-0.7.0.tgz}
@@ -1406,6 +1441,13 @@ packages:
       to-regex-range: registry.nlark.com/to-regex-range/5.0.1
     dev: true
 
+  registry.nlark.com/filter-obj/1.1.0:
+    resolution: {integrity: sha1-mzERErxsYSehbgFsbF1/GeCAXFs=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/filter-obj/download/filter-obj-1.1.0.tgz}
+    name: filter-obj
+    version: 1.1.0
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   registry.nlark.com/find-cache-dir/2.1.0:
     resolution: {integrity: sha1-jQ+UzRP+Q8bHwmGg2GEVypGMBfc=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/find-cache-dir/download/find-cache-dir-2.1.0.tgz}
     name: find-cache-dir
@@ -1700,6 +1742,13 @@ packages:
     dependencies:
       function-bind: registry.nlark.com/function-bind/1.1.1
 
+  registry.nlark.com/he/1.2.0:
+    resolution: {integrity: sha1-hK5l+n6vsWX922FWauFLrwVmTw8=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/he/download/he-1.2.0.tgz}
+    name: he
+    version: 1.2.0
+    hasBin: true
+    dev: true
+
   registry.nlark.com/hex-color-regex/1.1.0:
     resolution: {integrity: sha1-TAb8y0YC/iYCs8k9+C1+fb8aio4=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/hex-color-regex/download/hex-color-regex-1.1.0.tgz}
     name: hex-color-regex
@@ -1718,10 +1767,41 @@ packages:
     version: 1.0.0
     dev: true
 
+  registry.nlark.com/html-encoding-sniffer/3.0.0:
+    resolution: {integrity: sha1-LLGozw21JBR3blsqegTV3ZgVjek=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/html-encoding-sniffer/download/html-encoding-sniffer-3.0.0.tgz}
+    name: html-encoding-sniffer
+    version: 3.0.0
+    engines: {node: '>=12'}
+    dependencies:
+      whatwg-encoding: registry.nlark.com/whatwg-encoding/2.0.0
+    dev: true
+
   registry.nlark.com/http-cache-semantics/4.1.0:
     resolution: {integrity: sha1-SekcXL82yblLz81xwj1SSex045A=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/http-cache-semantics/download/http-cache-semantics-4.1.0.tgz}
     name: http-cache-semantics
     version: 4.1.0
+    dev: true
+
+  registry.nlark.com/http-proxy/1.18.1:
+    resolution: {integrity: sha1-QBVB8FNIhLv5UmAzTnL4juOXZUk=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/http-proxy/download/http-proxy-1.18.1.tgz}
+    name: http-proxy
+    version: 1.18.1
+    engines: {node: '>=8.0.0'}
+    dependencies:
+      eventemitter3: registry.nlark.com/eventemitter3/4.0.7
+      follow-redirects: registry.npmmirror.com/follow-redirects/1.14.6
+      requires-port: registry.nlark.com/requires-port/1.0.0
+    transitivePeerDependencies:
+      - debug
+    dev: true
+
+  registry.nlark.com/iconv-lite/0.6.3:
+    resolution: {integrity: sha1-pS+AvzjaGVLrXGgXkHGYcaGnJQE=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/iconv-lite/download/iconv-lite-0.6.3.tgz}
+    name: iconv-lite
+    version: 0.6.3
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      safer-buffer: registry.nlark.com/safer-buffer/2.1.2
     dev: true
 
   registry.nlark.com/icss-replace-symbols/1.1.0:
@@ -2717,6 +2797,13 @@ packages:
     dependencies:
       wrappy: registry.nlark.com/wrappy/1.0.2
 
+  registry.nlark.com/opener/1.5.2:
+    resolution: {integrity: sha1-XTfh81B3udysQwE3InGv3rKhNZg=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/opener/download/opener-1.5.2.tgz}
+    name: opener
+    version: 1.5.2
+    hasBin: true
+    dev: true
+
   registry.nlark.com/ordered-read-streams/1.0.1:
     resolution: {integrity: sha1-d8DLN8QVJdZBZtmQ/61+xqDhNj4=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/ordered-read-streams/download/ordered-read-streams-1.0.1.tgz}
     name: ordered-read-streams
@@ -2934,6 +3021,17 @@ packages:
       arr-diff: registry.nlark.com/arr-diff/4.0.0
       arr-union: registry.nlark.com/arr-union/3.1.0
       extend-shallow: registry.nlark.com/extend-shallow/3.0.2
+    dev: true
+
+  registry.nlark.com/portfinder/1.0.28:
+    resolution: {integrity: sha1-Z8RiKFK9U3TdHdkA93n1NGL6x3g=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/portfinder/download/portfinder-1.0.28.tgz}
+    name: portfinder
+    version: 1.0.28
+    engines: {node: '>= 0.12.0'}
+    dependencies:
+      async: registry.npmmirror.com/async/2.6.3
+      debug: registry.npmmirror.com/debug/3.2.7
+      mkdirp: registry.npmmirror.com/mkdirp/0.5.5
     dev: true
 
   registry.nlark.com/postcss-calc/7.0.5:
@@ -3260,6 +3358,18 @@ packages:
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
     dev: true
 
+  registry.nlark.com/query-string/7.0.1:
+    resolution: {integrity: sha1-Rb0UnPWGqqWC3/x+x6itl90C910=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/query-string/download/query-string-7.0.1.tgz}
+    name: query-string
+    version: 7.0.1
+    engines: {node: '>=6'}
+    dependencies:
+      decode-uri-component: registry.nlark.com/decode-uri-component/0.2.0
+      filter-obj: registry.nlark.com/filter-obj/1.1.0
+      split-on-first: registry.npmmirror.com/split-on-first/1.1.0
+      strict-uri-encode: registry.nlark.com/strict-uri-encode/2.0.0
+    dev: false
+
   registry.nlark.com/queue-microtask/1.2.3:
     resolution: {integrity: sha1-SSkii7xyTfrEPg77BYyve2z7YkM=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/queue-microtask/download/queue-microtask-1.2.3.tgz}
     name: queue-microtask
@@ -3447,6 +3557,12 @@ packages:
     version: 2.0.0
     dev: true
 
+  registry.nlark.com/requires-port/1.0.0:
+    resolution: {integrity: sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/requires-port/download/requires-port-1.0.0.tgz}
+    name: requires-port
+    version: 1.0.0
+    dev: true
+
   registry.nlark.com/resolve-from/3.0.0:
     resolution: {integrity: sha1-six699nWiBvItuZTM17rywoYh0g=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/resolve-from/download/resolve-from-3.0.0.tgz?cache=0&sync_timestamp=1631501918091&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fresolve-from%2Fdownload%2Fresolve-from-3.0.0.tgz}
     name: resolve-from
@@ -3585,12 +3701,17 @@ packages:
     name: safer-buffer
     version: 2.1.2
     dev: true
-    optional: true
 
   registry.nlark.com/sax/1.2.4:
     resolution: {integrity: sha1-KBYjTiN4vdxOU1T6tcqold9xANk=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/sax/download/sax-1.2.4.tgz}
     name: sax
     version: 1.2.4
+    dev: true
+
+  registry.nlark.com/secure-compare/3.0.1:
+    resolution: {integrity: sha1-8aAymzCLIh+uN7mXTz1XjQypmeM=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/secure-compare/download/secure-compare-3.0.1.tgz}
+    name: secure-compare
+    version: 3.0.1
     dev: true
 
   registry.nlark.com/semver-diff/2.1.0:
@@ -3795,6 +3916,13 @@ packages:
     name: stream-shift
     version: 1.0.1
     dev: true
+
+  registry.nlark.com/strict-uri-encode/2.0.0:
+    resolution: {integrity: sha1-ucczDHBChi9rFC3CdLvMWGbONUY=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/strict-uri-encode/download/strict-uri-encode-2.0.0.tgz}
+    name: strict-uri-encode
+    version: 2.0.0
+    engines: {node: '>=4'}
+    dev: false
 
   registry.nlark.com/string-hash/1.1.3:
     resolution: {integrity: sha1-6Kr8CsGFW0Zmkp7X3RJ1311sgRs=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/string-hash/download/string-hash-1.1.3.tgz}
@@ -4107,6 +4235,15 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
+  registry.nlark.com/union/0.5.0:
+    resolution: {integrity: sha1-ssEb6E9gU4U3uEbtuboma6AJAHU=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/union/download/union-0.5.0.tgz}
+    name: union
+    version: 0.5.0
+    engines: {node: '>= 0.8.0'}
+    dependencies:
+      qs: registry.npmmirror.com/qs/6.5.2
+    dev: true
+
   registry.nlark.com/uniq/1.0.1:
     resolution: {integrity: sha1-sxxa6CVIRKOoKBVBzisEuGWnNP8=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/uniq/download/uniq-1.0.1.tgz}
     name: uniq
@@ -4176,6 +4313,12 @@ packages:
     version: 4.4.1
     dependencies:
       punycode: registry.nlark.com/punycode/2.1.1
+    dev: true
+
+  registry.nlark.com/url-join/4.0.1:
+    resolution: {integrity: sha1-tkLiGiZGgI/6F4xMX9o5hE4Szec=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/url-join/download/url-join-4.0.1.tgz}
+    name: url-join
+    version: 4.0.1
     dev: true
 
   registry.nlark.com/url-parse-lax/3.0.0:
@@ -4300,6 +4443,15 @@ packages:
       loglevelnext: registry.npmmirror.com/loglevelnext/3.0.1
       nanoid: registry.npmmirror.com/nanoid/2.1.11
     dev: false
+
+  registry.nlark.com/whatwg-encoding/2.0.0:
+    resolution: {integrity: sha1-52NfWX/YcCCFhiaAWicp+naYrFM=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/whatwg-encoding/download/whatwg-encoding-2.0.0.tgz}
+    name: whatwg-encoding
+    version: 2.0.0
+    engines: {node: '>=12'}
+    dependencies:
+      iconv-lite: registry.nlark.com/iconv-lite/0.6.3
+    dev: true
 
   registry.nlark.com/when/3.7.8:
     resolution: {integrity: sha1-xxMLan6gRpPoQs3J56Hyqjmjn4I=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.nlark.com/when/download/when-3.7.8.tgz}
@@ -6212,6 +6364,14 @@ packages:
     dev: true
     optional: true
 
+  registry.npmmirror.com/async/2.6.3:
+    resolution: {integrity: sha1-1yYl4jRKNlbjo61Pp0n6gymdgv8=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.npmmirror.com/async/download/async-2.6.3.tgz}
+    name: async
+    version: 2.6.3
+    dependencies:
+      lodash: registry.npmmirror.com/lodash/4.17.21
+    dev: true
+
   registry.npmmirror.com/autoprefixer/9.6.0:
     resolution: {integrity: sha1-ARHGveKtIMbxeZWjP6189oVLTIc=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.npmmirror.com/autoprefixer/download/autoprefixer-9.6.0.tgz?cache=0&sync_timestamp=1635422146053&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fautoprefixer%2Fdownload%2Fautoprefixer-9.6.0.tgz}
     name: autoprefixer
@@ -6592,6 +6752,14 @@ packages:
       css-tree: registry.npmmirror.com/css-tree/1.1.3
     dev: true
 
+  registry.npmmirror.com/debug/3.2.7:
+    resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==, registry: http://rnpm.hz.netease.com/, tarball: https://registry.npmmirror.com/debug/download/debug-3.2.7.tgz}
+    name: debug
+    version: 3.2.7
+    dependencies:
+      ms: registry.npmmirror.com/ms/2.1.2
+    dev: true
+
   registry.npmmirror.com/debug/4.3.3:
     resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==, registry: http://rnpm.hz.netease.com/, tarball: https://registry.npmmirror.com/debug/download/debug-4.3.3.tgz}
     name: debug
@@ -6808,6 +6976,18 @@ packages:
       path-exists: registry.nlark.com/path-exists/4.0.0
     dev: true
 
+  registry.npmmirror.com/follow-redirects/1.14.6:
+    resolution: {integrity: sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==, registry: http://rnpm.hz.netease.com/, tarball: https://registry.npmmirror.com/follow-redirects/download/follow-redirects-1.14.6.tgz}
+    name: follow-redirects
+    version: 1.14.6
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: true
+
   registry.npmmirror.com/fsevents/2.1.3:
     resolution: {integrity: sha1-+3OHA66NL5/pAMM4Nt3r7ouX8j4=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.npmmirror.com/fsevents/download/fsevents-2.1.3.tgz}
     name: fsevents
@@ -6977,6 +7157,30 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       lru-cache: registry.nlark.com/lru-cache/6.0.0
+    dev: true
+
+  registry.npmmirror.com/http-server/14.0.0:
+    resolution: {integrity: sha1-vSFJUqYLk86Mqbvouhgfr3+YIbA=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.npmmirror.com/http-server/download/http-server-14.0.0.tgz}
+    name: http-server
+    version: 14.0.0
+    engines: {node: '>=12'}
+    hasBin: true
+    dependencies:
+      basic-auth: registry.nlark.com/basic-auth/2.0.1
+      colors: registry.nlark.com/colors/1.4.0
+      corser: registry.nlark.com/corser/2.0.1
+      he: registry.nlark.com/he/1.2.0
+      html-encoding-sniffer: registry.nlark.com/html-encoding-sniffer/3.0.0
+      http-proxy: registry.nlark.com/http-proxy/1.18.1
+      mime: registry.npmmirror.com/mime/1.6.0
+      minimist: registry.nlark.com/minimist/1.2.5
+      opener: registry.nlark.com/opener/1.5.2
+      portfinder: registry.nlark.com/portfinder/1.0.28
+      secure-compare: registry.nlark.com/secure-compare/3.0.1
+      union: registry.nlark.com/union/0.5.0
+      url-join: registry.nlark.com/url-join/4.0.1
+    transitivePeerDependencies:
+      - debug
     dev: true
 
   registry.npmmirror.com/http-signature/1.2.0:
@@ -7254,7 +7458,6 @@ packages:
     hasBin: true
     requiresBuild: true
     dev: true
-    optional: true
 
   registry.npmmirror.com/mime/2.6.0:
     resolution: {integrity: sha1-oqaCqVzU0MsdYlfij4PafjWAA2c=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.npmmirror.com/mime/download/mime-2.6.0.tgz}
@@ -7734,7 +7937,6 @@ packages:
     version: 6.5.2
     engines: {node: '>=0.6'}
     dev: true
-    optional: true
 
   registry.npmmirror.com/read-pkg-up/4.0.0:
     resolution: {integrity: sha1-GyIcYIi6d5lgHICPkRYcZuWPiXg=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.npmmirror.com/read-pkg-up/download/read-pkg-up-4.0.0.tgz}
@@ -7896,6 +8098,13 @@ packages:
     name: spdx-license-ids
     version: 3.0.11
     dev: true
+
+  registry.npmmirror.com/split-on-first/1.1.0:
+    resolution: {integrity: sha1-9hCv7uOxK84dDDBCXnY5i3gkml8=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.npmmirror.com/split-on-first/download/split-on-first-1.1.0.tgz}
+    name: split-on-first
+    version: 1.1.0
+    engines: {node: '>=6'}
+    dev: false
 
   registry.npmmirror.com/stable/0.1.8:
     resolution: {integrity: sha1-g26zyDgv4pNv6vVEYxAXzn1Ho88=, registry: http://rnpm.hz.netease.com/, tarball: https://registry.npmmirror.com/stable/download/stable-0.1.8.tgz}
