@@ -8,6 +8,9 @@
     "publish": "pnpm publish -r",
     "release": "pnpm run bump && pnpm run publish"
   },
+  "files": [
+    "packages"
+  ],
   "author": "wangjunwei",
   "license": "ISC",
   "description": "",
