@@ -4,4 +4,4 @@
 .vscode
 .idea/
 package-lock.json
-/packages/fabuild/lib/
+/packages/fabuild/node_modules/
