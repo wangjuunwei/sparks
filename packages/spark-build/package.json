@@ -1,6 +1,6 @@
 {
-  "name": "@sparks/fabuild",
-  "version": "1.0.0",
+  "name": "@wsparks/fabuild",
+  "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
   "files": [

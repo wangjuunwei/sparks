@@ -1,5 +1,5 @@
 {
-  "name": "@sparks/crossStorage",
+  "name": "@wsparks/crossStorage",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.umd.min.js",
