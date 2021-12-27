@@ -4,12 +4,6 @@ export default {
         importLibToEs: true,
     },
     cjs: {type: 'babel', lazy: true},
-    umd: {
-        name: 'sparkCrossStorage',
-        globals: {
-            sparkCrossStorage: 'sparkCrossStorage'
-        },
-    },
     target: 'browser',
     runtimeHelpers: true,
     extraBabelPlugins: [
