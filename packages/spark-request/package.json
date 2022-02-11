@@ -1,11 +1,18 @@
 {
   "name": "@wsparks/request",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "father-build"
   },
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -14,5 +21,8 @@
     "@babel/runtime-corejs3": "^7.16.5",
     "axios": "^0.24.0",
     "reflect-metadata": "^0.1.13"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
